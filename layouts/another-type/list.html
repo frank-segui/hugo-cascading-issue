@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <li><a href="{{.Parent.URL }}">Back</a></li>
+    <ul>
+        {{ range .Pages }}
+        <li><a href="{{.URL}}">{{.Title}}</a></li>
+        {{end}}
+    </ul>
+    <h1>Another type layout </h1>
+
+    {{.Content}}
+</body>
+</html>
